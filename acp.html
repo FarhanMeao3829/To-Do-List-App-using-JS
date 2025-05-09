@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping List App</title>
+    <style>
+      body {
+        background-color: lavenderblush;
+        font-family: cursive;
+        font-style: italic;
+        text-align: center;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+      }
+
+      input[type="text"] {
+        padding: 8px;
+        font-size: 16px;
+      }
+
+      button {
+        padding: 8px 12px;
+        margin-left: 8px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      li {
+        margin: 5px 0;
+      }
+
+      li button {
+        margin-left: 10px;
+        background-color: lightcoral;
+        border: none;
+        padding: 5px 10px;
+        color: white;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Add your shopping list here :3</h3>
+
+    <form id="myForm">
+      <input type="text" id="myInput" placeholder="Enter item..." />
+      <button type="submit">Add</button>
+    </form>
+
+    <h3>Shopping List</h3>
+    <ul id="myItem"></ul>
+
+    <script src="script.js"></script>
+  </body>
+</html>
